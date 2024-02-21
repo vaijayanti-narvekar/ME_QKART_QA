@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="QKART Test Suite">
+
+<listeners>
+        <listener class-name = "QKART_TESTNG.ListenerClass"></listener>
+ </listeners>
+   <!-- <groups >
+      <run>
+         <include name= "Sanity_test"/>
+         <include name= "Regression_Test"/>
+      </run>
+   </groups> -->
+   <parameter name="userName" value ="testUser" />
+   <parameter name="password" value ="test@123" />
+   <test name="QKART Test">
+   <parameter name="productName1" value="YONEX Smash Badminton Racquet"/>
+   <parameter name="productName2" value="Tan Leatherette Weekender Duffle"/>
+   <parameter name="address" value="Addr line 1 addr Line 2 addr line 3"/>
+
+   <parameter name="product1" value="Xtend Smart Watch"/>
+   <parameter name="product2" value="Yarine Floor Lamp"/>
+
+   <parameter name="product07" value="Stylecon 9 Seater RHS Sofa Set "/>
+   <parameter name="productQty" value="60" />
+
+      <classes>
+         <class name = "QKART_TESTNG.QKART_Tests">
+            <!-- <methods>
+               <include name="TestCase01"/>
+               <include name="TestCase05"/>
+               <include name="TestCase06"/>
+                <include name="TestCase07"/>
+            </methods> -->
+         </class>
+      </classes>
+   </test>
+</suite>
